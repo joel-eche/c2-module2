@@ -1,8 +1,9 @@
 def calculate_compound_interest(amount_deposited, interest_rate_per_period, number_periods)
   compound_interest = amount_deposited
+  interest_decimal = interest_rate_per_period / 100
 
   number_periods.times do
-    compound_interest += (compound_interest * interest_rate_per_period / 100)
+    compound_interest += (compound_interest * interest_decimal)
   end
 
   return compound_interest
