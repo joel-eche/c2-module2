@@ -7,12 +7,10 @@ end
 
 def min(my_array)
   check_array_length(my_array)
-
   min = my_array[0]
-  array_length = my_array.length
-
-  for i in 0...array_length
-    min = my_array[i] if my_array[i] < min
+  
+  my_array.each do |element|
+    min = element if element < min
   end
 
   return min
@@ -20,12 +18,10 @@ end
 
 def max(my_array)
   check_array_length(my_array)
-
   max = my_array[0]
-  array_length = my_array.length
-
-  for i in 0...array_length
-    max = my_array[i] if my_array[i] > max
+  
+  my_array.each do |element|
+    max = element if element > max
   end
 
   return max
