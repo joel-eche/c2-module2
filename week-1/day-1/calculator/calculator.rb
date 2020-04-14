@@ -1,29 +1,29 @@
 class Calculator
   def add(a, b)
-      return a + b
+    return a + b
   end
 
   def subtract(a, b)
-      return a - b
+    return a - b
   end
       
   def divide(a, b)
-      return a / b
+    return a / b
   end
 
   def multiply(a, b)
-      return a * b
+    return a * b
   end
       
   def exponentiate(a, b)
-      return a ** b
+    return a ** b
   end
 
   def modulo(a, b)
-      return a % b
+    return a % b
   end
 end
-  
+
 calculator = Calculator.new
 puts "Sum result is #{calculator.add(5, 4)}" # Should output "Sum result is 9"
 puts "Subtraction result is #{calculator.subtract(5, 4)}" # Should output "Subtraction result is 1"
