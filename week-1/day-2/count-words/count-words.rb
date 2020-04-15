@@ -1,10 +1,6 @@
 def count_words(text)
-  text.downcase!
-  words = text.split(" ")
-  result = Hash.new(0)
-
-  words.each { |word| result[word] += 1 }
-  result
+  words = text.downcase.split # split = split(" ")
+  words.to_h { |word| [word, words.count(word)] }
 end
 
 # test
