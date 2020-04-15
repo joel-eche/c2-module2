@@ -8,4 +8,4 @@ def count_words(text)
 end
 
 # test
-puts count_words("cake cake caKe I like cake very much please gIve me cake I need the cake i need it")
+p count_words("cake cake caKe I like cake very much please gIve me cake I need the cake i need it")
