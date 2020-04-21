@@ -6,6 +6,7 @@ def map(array)
   else
     result = array.dup
   end
+  
   result
 end
 
